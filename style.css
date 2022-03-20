@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+  background-color: linen;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+#form-list {
+  display: flex;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  appearance: none;
+  background: none;
+}
+
+#new-task {
+  flex: 1 1 0%;
+  background-color: lightslategrey;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 2.5rem;
+  font-size: 16px;
+}
+
+#new-task::placeholder {
+  color: darkkhaki;
+}
+
+#submit {
+  color: brown;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tasks {
+  padding: 1rem;
+}
+
+.tasks h2 {
+  color: brown;
+  margin-bottom: 1rem;
+}
+
+.task-list h2 {
+  color: rebeccapurple;
+  margin-bottom: 1rem;
+}
+
+#tasks .content {
+  display: flex;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  border: 100rem;
+  margin-bottom: 1.5rem;
+}
+#tasks .task .content .text {
+  color: blanchedalmond;
+  font-size: 16px;
+  widows: 100%;
+  display: block;
+}
+
+#tasks .task .text:not(:read-only) {
+  font: 16px;
+}
+
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: 100rem;
+  margin-bottom: 1.5rem;
+}
+
+.task .actions .edit {
+  color: salmon;
+  display: flex;
+  justify-content: space-between;
+  background-color: seagreen;
+}
+
+.task .actions .delete {
+  color: plum;
+  justify-content: space-between;
+  background-color: rebeccapurple;
+}
